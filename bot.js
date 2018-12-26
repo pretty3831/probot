@@ -225,14 +225,14 @@ client.on('message', message =>{
     }
 });
 client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : pretty`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : pretty ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`HAWADET SERVER`,"http://twitch.tv/S-F")
-client.user.setStatus("dnd")
+  console.log('|===================================|');
+  console.log(`|  Users Size ${client.users.size}  |`);
+  console.log(`| Guilds Size ${client.guilds.size} |`);
+  console.log(`|===================================|`);
+  console.log(`|          ${client.user.tag}       |`);
+  console.log(`|===================================|`);
+  console.log(`|              Im Ready !           |`);
+  console.log(`|===================================|`);
 });
 client.on('message', msg => {
   if (msg.author.bot) return;
